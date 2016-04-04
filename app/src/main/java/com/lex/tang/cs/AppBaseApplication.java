@@ -1,5 +1,7 @@
 package com.lex.tang.cs;
 
+import android.content.Context;
+
 import com.lex.tang.lib.BaseApplication;
 
 /**
@@ -7,9 +9,14 @@ import com.lex.tang.lib.BaseApplication;
  *
  */
 public class AppBaseApplication extends BaseApplication{
+    public static Context context;
     @Override
     public void onCreate() {
         super.onCreate();
+        context = this;
+    }
 
+    public static Context getContext() {
+        return context;
     }
 }

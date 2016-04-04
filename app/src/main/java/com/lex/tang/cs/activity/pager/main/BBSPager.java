@@ -2,6 +2,7 @@ package com.lex.tang.cs.activity.pager.main;
 
 import android.content.Context;
 import android.view.View;
+import android.widget.TextView;
 
 import com.lex.tang.cs.activity.pager.BasePager;
 
@@ -15,7 +16,9 @@ public class BBSPager extends BasePager {
 
     @Override
     protected View initView() {
-        return null;
+        TextView text = new TextView(mContext);
+        text.setText("123");
+        return text;
     }
 
     @Override

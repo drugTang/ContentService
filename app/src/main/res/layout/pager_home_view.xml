@@ -3,11 +3,21 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <com.lex.tang.cs.view.RefreshListView
+    <com.lex.tang.cs.view.indicator.TabPageIndicator
+        android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    </com.lex.tang.cs.view.RefreshListView>
+    </com.lex.tang.cs.view.indicator.TabPageIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+
 
 </LinearLayout>

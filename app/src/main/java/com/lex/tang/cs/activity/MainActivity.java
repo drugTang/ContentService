@@ -1,8 +1,6 @@
 package com.lex.tang.cs.activity;
 
 import android.content.Context;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 
@@ -14,6 +12,7 @@ import com.lex.tang.cs.activity.pager.main.HomePager;
 import com.lex.tang.cs.activity.pager.main.LibPager;
 import com.lex.tang.cs.activity.pager.main.PersonPager;
 import com.lex.tang.cs.activity.pager.main.StorePager;
+import com.lex.tang.cs.adapter.MainViewPagerAdapter;
 import com.lex.tang.cs.view.NoScrollViewPager;
 
 import java.util.ArrayList;
@@ -41,7 +40,7 @@ public class MainActivity extends AppBaseActivity {
         mPagers.add(new BBSPager(this));
         mPagers.add(new StorePager(this));
         mPagers.add(new PersonPager(this));
-
+        mViewPager.setAdapter(new MainViewPagerAdapter(mPagers));
     }
 
     @Override

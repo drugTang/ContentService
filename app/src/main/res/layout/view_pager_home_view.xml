@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lex.tang.cs.view.RefreshListView
+        android:id="@+id/rlv_home"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:layout_height="wrap_content">
+
+    </com.lex.tang.cs.view.RefreshListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络连接失败！"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
