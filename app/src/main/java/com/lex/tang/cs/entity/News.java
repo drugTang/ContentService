@@ -222,6 +222,7 @@ public class News {
                             ", imageurls=" + imageurls +
                             '}';
                 }
+
             }
         }
     }

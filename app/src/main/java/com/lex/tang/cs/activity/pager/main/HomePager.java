@@ -38,7 +38,7 @@ public class HomePager extends BasePager {
         View view = View.inflate(mContext, R.layout.pager_home_view,null);
         mViewPager= (ViewPager) view.findViewById(R.id.vp_home);
         mIndicator = (TabPageIndicator) view.findViewById(R.id.indicator);
-        mViewPager.setAdapter(new HomeViewPagerAdapter());
+        mViewPager.setAdapter(new HomeViewPagerAdapter(mContext));
         mIndicator.setViewPager(mViewPager);
         return view;
     }

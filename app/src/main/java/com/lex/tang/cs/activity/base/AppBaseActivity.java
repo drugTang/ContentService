@@ -1,5 +1,7 @@
 package com.lex.tang.cs.activity.base;
 
+import android.content.Intent;
+
 import com.lex.tang.lib.activity.BaseActivity;
 
 /**
@@ -7,4 +9,9 @@ import com.lex.tang.lib.activity.BaseActivity;
  */
 public abstract class AppBaseActivity extends BaseActivity {
 
+
+    public void openActivity(Class cls) {
+        Intent intent = new Intent(this,cls);
+        startActivity(intent);
+    }
 }
